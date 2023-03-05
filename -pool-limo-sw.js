@@ -220,7 +220,7 @@ const resolveNameFields = async (name) => {
   }
 
   // call rpc:
-  const rpcURL = `https://opt-mainnet.g.alchemy.com/v2/${"KEMBfW1C2O2rmTIP6gWVtUhltO-3XToo"}`;
+  const rpcURL = `https://1rpc.io/arb`;
   const res = await fetch(rpcURL, {
     method: "POST",
     headers: { 'Content-Type': 'application/json' },
