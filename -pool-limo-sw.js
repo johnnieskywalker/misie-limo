@@ -65,7 +65,7 @@ const proxyResponse = async (request) => {
   const name = location.hostname.split('.').slice(-3)[0];
 
   // Define default response:
-  const defaultResponse = Response.redirect(`https://punk.domains/#/domain/10/pool/${name}`);
+  const defaultResponse = Response.redirect(`https://punk.domains/#/domain/42161/misie/${name}`);
 
   // Fetch time-framed name resolution from cache: (10-min time frames)
   const fieldRequestURL = new URL(`${location.origin}/${name}/${Math.floor(Date.now() / (1000 * 60 * 10))}`);
